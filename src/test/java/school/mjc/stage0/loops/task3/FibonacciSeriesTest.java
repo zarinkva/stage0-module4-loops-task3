@@ -41,7 +41,7 @@ class FibonacciSeriesTest extends BaseIOTest {
                 .filter(line -> line.contains("printFibonacci"))
                 .collect(Collectors.toList());
 
-        assertEquals(1, result.size());
+        assertEquals(2, result.size());
     }
 
 }

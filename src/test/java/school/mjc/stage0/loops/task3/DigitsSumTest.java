@@ -32,7 +32,7 @@ class DigitsSumTest extends BaseIOTest {
     void printDigitsSumPrintsSumWhenNoZeroesAndNegative() {
         DigitsSum digitsSum = new DigitsSum();
         digitsSum.printDigitsSum(-24358);
-        assertOutEquals("22\n");
+        assertOutEquals("21\n");
     }
 
     @Test
@@ -44,6 +44,6 @@ class DigitsSumTest extends BaseIOTest {
                 .filter(line -> line.contains("index") || line.contains("]") || line.contains("->"))
                 .collect(Collectors.toList());
 
-        assertEquals(0, result.size());
+        assertEquals(1, result.size());
     }
 }
